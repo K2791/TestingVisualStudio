@@ -14,7 +14,7 @@ namespace Demo01_T6
             string line = Console.ReadLine();
             double distance = double.Parse(line);
             double gas = (distance / 100 * 7.02);
-            double money = (gas * 1.595);
+            string money = (gas * 1.595).ToString("#.##");
             Console.WriteLine("Gas needed: {0}l, money needed: {1}e", gas, money);
             Console.WriteLine("Press any key to continue...");
             Console.ReadLine();
